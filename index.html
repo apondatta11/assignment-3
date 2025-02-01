@@ -1,13 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Meaw</title>
     <!-- tailwind cdn add -->
-     
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
+    <!-- icons -->
 </head>
+
 <body>
-    
+    <header>
+        <nav class="bg-[#FFF9F4] ">
+            <div class="mx-auto w-9/12 py-3 flex justify-between overflow-hidden">
+                <div class="flex gap-3 items-center">
+                    <div class="">
+                        <img src="c1-assets/logo-header.png" alt="" class="w-full lg:w-full">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl uppercase absolute invisible lg:relative lg:visible ">Browse<span class="text-[#FFDC26]">4</span>pets</h2>
+                    </div>
+                </div>
+                <div class="absolute invisible flex gap-3 no-underline items-center lg:relative lg:visible">
+                    <a href="">Find A pet</a>
+                    <a href="">Breeds</a>
+                    <a href="">Contact Us</a>
+                </div>
+                <div class="flex items-center gap-3 absolute invisible lg:relative lg:visible">
+                    <img src="c1-assets/bell.png " alt="" class="h-1/2">
+                    <img src="c1-assets/search.png" alt="" class="h-1/2">
+                    <button class="btn">Login</button>
+                    <button class="btn btn-warning ">Register</button>
+                </div>
+                <div class="relative flex items-center lg:absolute lg:invisible">
+                    <img src="c1-assets/bars-3.png" alt="" class="">
+                </div>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <div>
+            <h1>Pamper Your Pet, Because They Deserve the Bes</h1>
+            <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="btn btn-warning py-3 px-8">Find a pet</button>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
